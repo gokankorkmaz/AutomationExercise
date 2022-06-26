@@ -14,6 +14,9 @@ import java.time.Duration;
 
 public class SearchProduct {
 
+    //TestCase 9: Search Product
+
+
     //1. Launch browser
     //2. Navigate to url 'http://automationexercise.com'
     //3. Verify that home page is visible successfully
@@ -25,7 +28,6 @@ public class SearchProduct {
 
     static WebDriver driver;
 
-    //TestCase 9: Search Product
 
     @BeforeClass
     public static void setup() {
