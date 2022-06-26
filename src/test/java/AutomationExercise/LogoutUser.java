@@ -14,7 +14,8 @@ import java.time.Duration;
 
 public class LogoutUser {
 
-    //tc4Logoutuser
+    //Test Case 4: Logout User
+
 
     //1. Launch browser
     //2. Navigate to url 'http://automationexercise.com'
