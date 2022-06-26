@@ -45,22 +45,22 @@ public class LogoutUser {
         driver.navigate().to("http://automationexercise.com");
 
         //3. Verify that home page is visible successfully
-        WebElement logoElementi = driver.findElement(By.xpath("//img[@src='/static/images/home/logo.png']"));
-        Assert.assertTrue(logoElementi.isDisplayed());
+        WebElement logoElement = driver.findElement(By.xpath("//img[@src='/static/images/home/logo.png']"));
+        Assert.assertTrue(logoElement.isDisplayed());
 
         //4. Click on 'Signup / Login' button
         driver.findElement(By.xpath("//a[@href='/login']")).click();
 
 
         //5. Verify 'Login to your account' is visible
-        WebElement verifyLogin = driver.findElement(By.xpath("//h2[text()='Login to your account']"));
-        Assert.assertTrue(verifyLogin.isDisplayed());
+        WebElement loginToYourAccountText = driver.findElement(By.xpath("//h2[text()='Login to your account']"));
+        Assert.assertTrue(loginToYourAccountText.isDisplayed());
 
         //6. Enter correct email address and password
-        WebElement login = driver.findElement(By.cssSelector("input[data-qa='login-email']"));
-        login.sendKeys("ahmet@nehaber.com");
-        WebElement password = driver.findElement(By.cssSelector("input[data-qa='login-password']"));
-        password.sendKeys("12345");
+        WebElement loginEmail = driver.findElement(By.cssSelector("input[data-qa='login-email']"));
+        loginEmail.sendKeys("ahmet@nehaber.com");
+        WebElement loginPassword = driver.findElement(By.cssSelector("input[data-qa='login-password']"));
+        loginPassword.sendKeys("12345");
 
         //7. Click 'login' button
         driver.findElement(By.cssSelector("button[data-qa='login-button']")).click();
